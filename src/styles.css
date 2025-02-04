@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 2px;
+}
+
+.dropdown {
+    background-color: rgb(118, 118, 118);
+    position: relative;
+    display: inline-block;
+}
+
+#dropbtn {
+    cursor: pointer;
+}
+
+#dropbtn:hover, #dropbtn:focus {
+    background-color: chocolate;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    min-width: 150px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    border-radius: 5px;
+}
+
+.show {
+    display: block;
+}
