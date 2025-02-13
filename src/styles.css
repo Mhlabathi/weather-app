@@ -1,38 +1,155 @@
 * {
     margin: 0px;
     padding: 2px;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
-.dropdown {
-    background-color: rgb(118, 118, 118);
-    position: relative;
-    display: inline-block;
+body {
+    background-image: linear-gradient(to right, rgba(6, 6, 39, 0.627), rgba(52, 96, 161, 0.847), rgba(16, 74, 88, 0.842));
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
 }
 
-#dropbtn {
-    cursor: pointer;
+.controls {
+    width: 100%;
+    padding: 5px;
+    display:flex;
+    justify-content: space-between;
 }
 
-#dropbtn:hover, #dropbtn:focus {
-    background-color: chocolate;
+form, .scale-div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    margin-left: auto;
+    border-radius: 8px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    overflow: auto;
-    min-width: 150px;
+form input {
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgba(121, 121, 240, 0.338), rgba(125, 174, 247, 0.305), rgba(126, 211, 233, 0.371));
+    border: 2px solid rgb(98, 98, 235);
+    height: 25px;
+    width: 200px;
+
+}
+
+form button {
+    border-radius: 50px;
+    margin: auto;
+}
+
+.scale-div select {
+    border-radius: 20px;
+    background-color: rgba(205, 247, 233, 0.941);
+    box-shadow: 0 0 1px rgba(205, 247, 233, 0.941);
+}
+
+.weather-summary {
+    background-image: linear-gradient(to right, rgba(121, 121, 240, 0.338), rgba(125, 174, 247, 0.305), rgba(126, 211, 233, 0.371));
+    border: 2px solid rgb(98, 98, 235);
+    border-radius: 10px ;
+    color: rgb(222, 212, 212);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.weather-summary h4 {
+    font-size: large;
+}
+
+.hourly-weather, .forecast-div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid rgb(98, 98, 235);
+    border-radius: 8px;
+    box-shadow: 0 0 5px;
+}
+
+.forecast-div h3 {
+    margin-bottom: 5px;
+}
+
+.description {
+    margin: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-align: left;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.hours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.hourDiv {
+    background-image: linear-gradient(to right, rgba(121, 121, 240, 0.338), rgba(125, 174, 247, 0.305), rgba(126, 211, 233, 0.371));
+    opacity: 0.9;
+    color: rgb(222, 212, 212);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.forecast {
+    display: flex;
+    gap: 8px;
+}
+
+.nextDayDiv {
+    background-image: linear-gradient(to right, rgba(121, 121, 240, 0.338), rgba(125, 174, 247, 0.305), rgba(126, 211, 233, 0.371));
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(222, 212, 212);
     border-radius: 5px;
-    background-color: blueviolet;
-    z-index: 1;
+    padding: 5px;
+
 }
 
-.dropdown-content a {
-    display: block;
-    color: black;
-    border-radius: 5px;
+.next-day-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(150, 209, 209);
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
 }
 
-.show {
-    display: block;
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(150, 209, 209);
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
+}
+
+.hour-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(150, 209, 209);
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
 }

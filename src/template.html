@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Today</title>
 </head>
 <body>
-    <div class="Dropdown">
-        <button id="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="">Link1</a>
-            <a href="">Link2</a>
-            <a href="">Link3</a>
+    <div class="controls">
+        <div class="form-element">
+            <form action="#">
+                <div class="search-div">
+                    <label for="search" id="for-city">Enter City</label>
+                    <input type="text" id="search">
+                </div>
+                <button type="submit" id="submit-btn">Search</button>
+            </form>
+        </div>
+        <div class="scale-div">
+            <select name="scale" id="scale">
+                <option value="C" id="celsius"> &degC </option>
+                <option value="F" id="farenheit"> &degF </option>
+            </select>
         </div>
     </div>
+    <div class="weather-summary">
+        <h3 class="location"></h3>
+        <h5 class="temperatures"></h5>
+        <img src="clear-day.svg" alt="icon for today's weather" id="icon">
+        <h6 class="conditions"></h6>
+    </div>
+    <div class="hourly-weather">
+        <div class="description"></div>
+        <hr>
+        <div class="hours"></div>
+    </div>
+    <div class="forecast-div">
+        <h3 id="fore-descr">Weather Forecast</h3>
+        <div class="forecast"></div>
+    </div>
+
+    <script src="iconsSVG.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
